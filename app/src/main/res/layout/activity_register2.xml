@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:id="@+id/linearLayout9">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/linearLayout13" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/linearLayout">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/firstName"
+                android:ems="10"
+                android:id="@+id/txtFirstName"
+                android:focusable="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/lNameTXT"
+                android:layout_weight="0.5" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/lastName"
+                android:ems="10"
+                android:id="@+id/txtLastName"
+                android:focusable="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/lNameTXT"
+                android:layout_weight="0.5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/linearLayout2">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="@string/mobileNumber"
+                android:ems="10"
+                android:id="@+id/txtMobileNumber"
+                android:layout_weight="0.5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/linearLayout3">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/nic"
+                android:ems="10"
+                android:id="@+id/txtNIC"
+                android:layout_weight="0.5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/linearLayout4">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email"
+                android:ems="10"
+                android:id="@+id/txtEMail" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/linearLayout5" >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/address"
+                android:ems="10"
+                android:id="@+id/editText6"
+                android:focusable="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/txtAddress"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/linearLayout7" >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:id="@+id/linearLayout6" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/gender"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView"
+                android:layout_weight="0.5"
+                android:gravity="center" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5">
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:id="@+id/rbtnMale" />
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:id="@+id/rbtnFemale" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/linearLayout8" >
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/password"
+                android:ems="10"
+                android:id="@+id/txtPassword"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/linearLayout10" >
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/confirmPassword"
+                android:ems="10"
+                android:id="@+id/txtConfirmPassword"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/linearLayout12" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/linearLayout11" >
+
+            <CheckBox
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/cboxDriverDetails"
+                android:text="Driver Details" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnRegister"
+            android:id="@+id/rButton"
+            android:layout_marginTop="53dp" />
+
+    </LinearLayout>
+</ScrollView>

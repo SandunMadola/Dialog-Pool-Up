@@ -2,7 +2,8 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/activityMode">
 
     <LinearLayout
         android:orientation="vertical"
@@ -13,8 +14,8 @@
         <Button
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:text="Passenger"
-            android:id="@+id/button"
+            android:text="@string/btnPassenger"
+            android:id="@+id/btnPassengerMode"
             android:onClick="gotoPassengerMap"/>
     </LinearLayout>
 
@@ -27,8 +28,9 @@
         <Button
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:text="Driver"
-            android:id="@+id/button2" />
+            android:text="@string/btnDriver"
+            android:id="@+id/btnDriverMode"
+            android:onClick="gotoDriverMap"/>
     </LinearLayout>
 
 </LinearLayout>

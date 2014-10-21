@@ -5,4 +5,34 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+    <!--Login Page-->
+    <string name="userName">User Name : </string>
+    <string name="password">Password : </string>
+    <string name="btnLogin">Log In</string>
+    <string name="btnRegister">Register</string>
+
+    <!--Register Page-->
+    <string name="firstName">First Name : </string>
+    <string name="lastName">Last Name : </string>
+    <string name="mobileNumber">Mobile Number :</string>
+    <string name="nic">NIC :</string>
+    <string name="email">E-mail :</string>
+    <string name="address">Address :</string>
+    <string name="gender">Gender :</string>
+    <string name="confirmPassword">Confirm Password :</string>
+
+
+    <!--Home Page-->
+    <string name="home">Home</string>
+
+    <!--Mode Page-->
+    <string name="btnPassenger">Passenger</string>
+    <string name="btnDriver">Driver</string>
+    <string name="driver">Driver</string>
+    <string name="cancel">Cancel</string>
+    <string name="freeRide">Free Ride</string>
+    <string name="cashRide">Cash Ride</string>
+    <string name="amount">Amount per Km (Rs/Km) : </string>
+
+
 </resources>
