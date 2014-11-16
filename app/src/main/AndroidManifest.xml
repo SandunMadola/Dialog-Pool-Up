@@ -44,6 +44,8 @@
             android:name=".PopupDriverModeActivity"/>
         <activity
             android:name=".DriverMapActivity"/>
+        <activity
+            android:name=".ProfileActivity"/>
 
 
         <!--google map-->

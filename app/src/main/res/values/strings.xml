@@ -19,7 +19,12 @@
     <string name="email">E-mail :</string>
     <string name="address">Address :</string>
     <string name="gender">Gender :</string>
+    <string name="licenceNo">Licence No :</string>
+    <string name="vehicleNo">Vehicle No :</string>
+    <string name="vehicleType">Vehicle Type : Ex car</string>
+    <string name="vehicleDescription">Vehicle Description : </string>
     <string name="confirmPassword">Confirm Password :</string>
+
 
 
     <!--Home Page-->

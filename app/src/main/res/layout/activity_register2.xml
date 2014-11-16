@@ -203,12 +203,88 @@
             android:layout_height="45dp"
             android:id="@+id/linearLayout11" >
 
-            <CheckBox
-                android:layout_width="fill_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="If you'd like to share your vehicle fill followings..."
+                android:id="@+id/textView2"
+                android:textSize="18dp" />
+        </LinearLayout>
 
-                android:id="@+id/cboxDriverDetails"
-                android:text="Driver Details" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/linearLayout14" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/linearLayout15" >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/licenceNo"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/linearLayout16" >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/vehicleNo"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/linearLayout17" >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/vehicleType"
+                android:ems="10"
+                android:id="@+id/editText3"
+                android:focusable="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/txtAddress"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/linearLayout18" >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/vehicleDescription"
+                android:ems="10"
+                android:id="@+id/editText4"
+                android:focusable="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/txtAddress"
+                android:layout_weight="0.5" />
         </LinearLayout>
 
         <Button

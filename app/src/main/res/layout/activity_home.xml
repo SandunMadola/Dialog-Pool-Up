@@ -48,6 +48,7 @@
                 android:id="@+id/btnProfile"
                 android:layout_weight="0.5"
                 android:src="@drawable/profile"
+                android:onClick="gotoProfile"
                 android:scaleType="fitCenter" />
 
             <ImageButton

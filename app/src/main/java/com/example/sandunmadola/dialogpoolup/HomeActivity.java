@@ -20,4 +20,8 @@ public class HomeActivity extends Activity {
         Intent intent = new Intent(this, ModeActivity.class);
         startActivity(intent);
     }
+    public void gotoProfile(View view){
+        Intent intent = new Intent(this, ProfileActivity.class);
+        startActivity(intent);
+    }
 }

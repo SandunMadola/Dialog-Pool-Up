@@ -4,7 +4,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/popup"
-    android:background="#F111">
+    android:background="#fff">
 
     <LinearLayout
         android:orientation="vertical"
@@ -13,12 +13,19 @@
 
         <TextView
             android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
             android:text="@string/driver"
-            android:textColor="#FFF"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:textColor="#000"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center_horizontal|fill_vertical" />
     </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linearLayout7" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -38,14 +45,7 @@
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="50dp"
-        android:id="@+id/linearLayout4" >
-
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:text="@string/cashRide"
-            android:id="@+id/btnCashRide" />
-    </LinearLayout>
+        android:id="@+id/linearLayout6" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -61,6 +61,19 @@
             android:hint="@string/amount"
             android:ems="10"
             android:id="@+id/editText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linearLayout4" >
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/cashRide"
+            android:id="@+id/btnCashRide" />
     </LinearLayout>
 
     <LinearLayout
