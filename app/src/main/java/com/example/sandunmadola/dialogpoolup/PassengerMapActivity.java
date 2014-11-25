@@ -104,7 +104,6 @@ public class PassengerMapActivity extends FragmentActivity {
         mMap.addMarker(options);
 
     }
-
     private void hideSoftKeyboard(View v) {
         InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(v.getWindowToken(),0);
