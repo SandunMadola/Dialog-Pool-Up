@@ -24,4 +24,9 @@ public class HomeActivity extends Activity {
         Intent intent = new Intent(this, ProfileActivity.class);
         startActivity(intent);
     }
+    public void gotoMessage(View view){
+        Intent intent = new Intent(this, MessageActivity.class);
+        startActivity(intent);
+    }
+
 }

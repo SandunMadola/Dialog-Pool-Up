@@ -1,20 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!--?xml version="1.0" encoding="utf-8"?-->
 
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.sandunmadola.dialogpoolup.PassengerMapActivity" >
 
     <item
         android:id="@+id/mapTypeNormal"
         android:title="Normal"/>
+        app:showAsAction="Always"
     <item
         android:id="@+id/mapTypeSatellite"
         android:title="Satellite"/>
+        app:showAsAction="Always"
+
     <item
         android:id="@+id/mapTypeTerrain"
         android:title="Terrain"/>
+        app:showAsAction="Always"
     <item
         android:id="@+id/mapTypeHybrid"
         android:title="Hybrid"/>
+        app:showAsAction="Always"
     <item
         android:id="@+id/mapTypeNone"
         android:title="None"/>
+        app:showAsAction="Always"
 </menu>

@@ -31,6 +31,8 @@
     <string name="home">Home</string>
 
     <!--Mode Page-->
+    <string name="New_ToggleButton">Satellite</string>
+    <string name="New_ToggleButton2">OtherSatellite</string>
     <string name="btnPassenger">Passenger</string>
     <string name="btnDriver">Driver</string>
     <string name="driver">Driver</string>

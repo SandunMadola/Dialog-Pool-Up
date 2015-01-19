@@ -46,6 +46,8 @@
             android:name=".DriverMapActivity"/>
         <activity
             android:name=".ProfileActivity"/>
+        <activity
+            android:name=".MessageActivity"/>
 
 
         <!--google map-->
