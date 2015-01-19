@@ -82,8 +82,6 @@ public class PassengerMapActivity extends FragmentActivity {
             public void onClick(View view) {
               String txt= btn.getText().toString();
 
-
-
                 if(txt.equals("ON")){
 
                     mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
@@ -98,6 +96,7 @@ public class PassengerMapActivity extends FragmentActivity {
 
             }
         });
+
     }
 
     public boolean servicesOK(){
