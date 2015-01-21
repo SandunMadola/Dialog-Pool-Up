@@ -17,27 +17,80 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:orientation="horizontal"
+        <FrameLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="fill_parent"
+            android:id="@+id/frameLayout">
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtPlace1"
-                android:hint="Place"
-                android:longClickable="false"
-                android:layout_weight="0.75" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:visibility="visible"
+                android:layout_height="fill_parent"
+                android:id="@+id/primaryLayout" >
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Go"
-                android:id="@+id/btnGo"
-                android:onClick="gotoGeoLocate"
-                android:layout_weight="0.1" />
-        </LinearLayout>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtPlace1"
+                    android:hint="Start"
+                    android:longClickable="false"
+                    android:layout_weight="0.75" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Go"
+                    android:id="@+id/btnGo1"
+                    android:onClick="gotoGeoLocate"
+                    android:layout_weight="0.1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:visibility="invisible"
+                android:layout_height="fill_parent"
+                android:id="@+id/secondaryLayout" >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtPlace2"
+                    android:hint="end"
+                    android:longClickable="false"
+                    android:layout_weight="0.75" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Go"
+                    android:id="@+id/btnGo2"
+                    android:onClick="gotoGeoLocate"
+                    android:layout_weight="0.1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:visibility="invisible"
+                android:layout_height="fill_parent"
+                android:id="@+id/ternaryLayout" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reset"
+                    android:id="@+id/btnReset"
+                    android:onClick="gotoReset"
+                    android:layout_weight="0.33" />
+
+
+
+
+            </LinearLayout>
+        </FrameLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -45,11 +98,34 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
-        <ToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/New_ToggleButton"
-            android:id="@+id/toggleButton" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/New_ToggleButton"
+
+                android:id="@+id/toggleButton"
+
+                android:layout_weight="0.33"
+                android:layout_gravity="center_horizontal"
+               />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue"
+                android:id="@+id/btnContinue"
+                android:onClick="gotoDriverList"
+                android:enabled="false"
+                android:layout_weight="0.33" />
+
+
+        </LinearLayout>
 
         <fragment
             android:id="@+id/map1"

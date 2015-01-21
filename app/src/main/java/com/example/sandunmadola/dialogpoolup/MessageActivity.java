@@ -25,7 +25,7 @@ public class MessageActivity extends Activity {
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_mainlistview);
+            setContentView(R.layout.activity_messagelistview);
             //ff.setText(f);
             mainListView = (ListView) findViewById(R.id.mainListView);
 
@@ -35,7 +35,7 @@ public class MessageActivity extends Activity {
             msglist.addAll(Arrays.asList(msg));
 
             // Create ArrayAdapter using the planet list.
-            listAdapter = new ArrayAdapter<String>(this, R.layout.activity_rowlistview, msglist);
+            listAdapter = new ArrayAdapter<String>(this, R.layout.activity_messagerowlistview, msglist);
 
             // Set the ArrayAdapter as the ListView's adapter.
             mainListView.setAdapter(listAdapter);

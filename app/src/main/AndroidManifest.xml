@@ -48,7 +48,8 @@
             android:name=".ProfileActivity"/>
         <activity
             android:name=".MessageActivity"/>
-
+        <activity
+            android:name=".AvailableDriverListActivity"/>
 
         <!--google map-->
         <meta-data android:name="com.google.android.gms.version"

@@ -1,6 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/map"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:name="com.google.android.gms.maps.MapFragment"/>
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:visibility="visible"
+                android:layout_height="fill_parent"
+                android:id="@+id/primaryLayout">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtPlace3"
+                    android:hint="Start"
+                    android:longClickable="false"
+                    android:layout_weight="0.75" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Go"
+                    android:id="@+id/btnGo"
+                    android:onClick="gotoGeoLocate2"
+                    android:layout_weight="0.1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:visibility="invisible"
+                android:layout_height="fill_parent"
+                android:id="@+id/secondaryLayout">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtPlace4"
+                    android:hint="end"
+                    android:longClickable="false"
+                    android:layout_weight="0.75" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Go"
+                    android:id="@+id/button"
+                    android:onClick="gotoGeoLocate2"
+                    android:layout_weight="0.1" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/New_ToggleButton"
+                android:shadowColor="@color/common_signin_btn_dark_text_focused"
+                android:id="@+id/toggleButton2" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:onClick="reset"
+                android:id="@+id/btnReset" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proceed"
+                android:layout_marginLeft="5dp"
+                android:enabled="false"
+
+                android:id="@+id/btnProceed" />
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/map1"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

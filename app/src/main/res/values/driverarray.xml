@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Drivers">
+        <item name="one_1">Chathura</item>
+        <item name="one_2">Kasun</item>
+        <item name="one_3">Sanath</item>
+        <item name="one_4">Suminda</item>
+        <item name="one_5">Kapila</item>
+
+    </string-array>
+
+
+
+</resources>

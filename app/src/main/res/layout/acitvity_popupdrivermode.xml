@@ -12,7 +12,7 @@
         android:layout_height="50dp">
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/listdrivername"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="@string/driver"
@@ -57,7 +57,7 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:inputType="numberDecimal"
-            android:textColor="#FFF"
+            android:textColor="#000"
             android:hint="@string/amount"
             android:ems="10"
             android:id="@+id/editText" />
@@ -73,7 +73,9 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="@string/cashRide"
-            android:id="@+id/btnCashRide" />
+            android:onClick="gotoDriverMap"
+            android:id="@+id/btnCashRide"
+            android:clickable="true" />
     </LinearLayout>
 
     <LinearLayout
